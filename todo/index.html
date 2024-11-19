@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do App with Google Sheets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Interactive To-Do App</h1>
+            <button id="login-btn" onclick="handleAuthClick()">Sign in with Google</button>
+            <input type="text" id="task-title" placeholder="Task Title">
+            <input type="datetime-local" id="task-date" placeholder="Date and Time">
+            <textarea id="task-details" placeholder="Task Details"></textarea>
+            <button onclick="addTask()">Add Task</button>
+        </header>
+
+        <div class="todo-list" id="todo-list">
+            <!-- To-Do cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
