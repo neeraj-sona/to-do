@@ -7,7 +7,9 @@ let SCOPES = "https://www.googleapis.com/auth/spreadsheets";
 let gapiLoaded = false; // Flag to check if the API is loaded
 let auth2 = null;
 let spreadsheetId = 'YOUR_SPREADSHEET_ID';  // The ID of your Google Sheet
-
+// go to google cloud and create account 
+// go to api section in api client
+// select a google sheet
 // Initialize the Google API Client
 function initClient() {
     gapi.client.init({
